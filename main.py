@@ -3,6 +3,8 @@ import json
 #file to store library data 
 FILE_NAME="library_data.json"
 
+data={"Book":[],"Member":[],"Admin":[]}
+
 def load_data():
     with open("FILE_NAME","r") as file:
         return json.loads(file)
