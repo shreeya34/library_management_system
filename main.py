@@ -9,12 +9,15 @@ data={"Book":[],"Member":[],"Admin":[]}
     
 
 def load_data():
-    with open("FILE_NAME","r") as file:
-        return json.loads(file)
-    
-def save_data():
+    try:
+        with open("FILE_NAME","r") as file:
+            return json.loads(file)
+    except FileNotFoundError:
+        return {"Book":[],"Member":[],"Admin":[]}
+        
+def save_data(data):
     with open("library_data.json","w") as file:
-        json.dumps(data,file, indent=4)
+        json.dump(data,file, indent=4)
     
 
 class Book:
@@ -41,35 +44,24 @@ class Member:
 
 class Admin(Member):
     def __init__(self,admin_id,name):
-        super.__init__(admin_id,name,"Admin",None)
+        super().__init__(admin_id,name,"Admin",None)
         
     def add_books(self,title,author_name):
         data=load_data()
-        book_id = data[len(book_id)+1]
-        book = Book[book_id,title,author_name] 
-        data["book"].append(book.__dict__)        
+        book_id = len(data["Book"]) + 1  
+        book = Book(book_id,title,author_name)
+        data["Book"].append(book.__dict__)        
         save_data(data)
         print(f'Book {title} added succesfully')
         
-    def add_member(self,member_id,name,role):
-        data=load_data()
-        member_id = data[len(member_id)+1]
-        expiry_date= (datetime.now() + datetime.timedelta(days=365)).strftime("%Y-%m-%d")
-        member = Member[member_id,name,role,expiry_date]
-        data["members"].append(member.__dict__)
-        save_data(data)
-        print(f"Member {name} added succesfully")
-        
-    def view_member(self):
-        data=load_data()
-        print("/n List of member:")
-        for member in data["members"]:
-            print(f"{member['id'],member['name'],member['role']}")
-            
+data = load_data()
 
-        
-    
-        
+admin = Admin(1, "shreeya")
+
+
+admin.add_books("1984", "George Orwell")
+
+
         
         
     
