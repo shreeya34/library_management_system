@@ -54,10 +54,19 @@ class Admin(Member):
         member_id = data[len(member_id)+1]
         expiry_date= (datetime.now() + datetime.timedelta(days=365)).strftime("%Y-%m-%d")
         member = Member[member_id,name,role,expiry_date]
-        data["member"].append(member.__dict__)
+        data["members"].append(member.__dict__)
         save_data(data)
         print(f"Member {name} added succesfully")
         
+    def view_member(self):
+        data=load_data()
+        print("/n List of member:")
+        for member in data["members"]:
+            print(f"{member['id'],member['name'],member['role']}")
+        
+        
+        
+    
         
         
         
