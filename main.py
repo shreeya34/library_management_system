@@ -1,4 +1,5 @@
 import json 
+import datetime
 
 #file to store library data 
 FILE_NAME="library_data.json"
@@ -42,11 +43,21 @@ class Admin(Member):
         
     def add_books(self,title,author_name):
         data=load_data()
-        book_id = len(book_id)+1
+        book_id = data[len(book_id)+1]
         book = Book[book_id,title,author_name] 
         data["book"].append(book.__dict__)        
         save_data(data)
         print(f'Book {title} added succesfully')
+        
+    def add_member(self,member_id,name,role):
+        data=load_data()
+        member_id = data[len(member_id)+1]
+        expiry_date= (datetime.now() + datetime.timedelta(days=365)).strftime("%Y-%m-%d")
+        member = Member[member_id,name,role,expiry_date]
+        data["member"].append(member.__dict__)
+        save_data(data)
+        print(f"Member {name} added succesfully")
+        
         
         
         
