@@ -72,7 +72,7 @@ class Member:
                     book['stock'] = int(book['stock']) + 1
                     print(f"Return Date: {return_date}")
                     save_data(data)
- 
+
 def load_admin_data():
     data = load_data()  
     return data.get("Admin", [])
@@ -80,11 +80,7 @@ def load_admin_data():
 class Admin(Member):
     def __init__(self, admin_id, name):
         super().__init__(admin_id, name, "Admin") 
-    
-    def auth(self,admin_name):
-        data = load_data()
-       
-        
+           
     def add_books(self, title, author_name, stock):
         data = load_data()
         book_id = len(data["Book"]) + 1  
@@ -96,7 +92,6 @@ class Admin(Member):
     def add_member(self,member_id,name, role):
         data = load_data()
         member = Member(member_id, name, role)
-        
         data["Member"].append(member.__dict__)  
         save_data(data)
         print(f"Member '{name}' added successfully")
@@ -105,7 +100,7 @@ class Admin(Member):
         data = load_data()
         print("List of member:")
         for member in data["Member"]:
-            print(member['name'])
+            print(member['name'],member['role'])
     
     def view_avilable_books(self):
         data = load_data()
@@ -122,11 +117,5 @@ class Admin(Member):
 
         
         
-# data = load_data()
-
-# admin = Admin(1, "shreeya")
-# admin.add_books("1984", "George Orwell", "8")
-#renew books
-# when user renew the book it should automatically update
 
 

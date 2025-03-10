@@ -1,14 +1,11 @@
 {
-   "Admin":[
-    {
-          "admin_id": "admin1",
-          "name": "Shreeya",
-          "password": "admin"
-
-    }
-
-   ],
-   
+    "Admin": [
+        {
+            "admin_id": "admin1",
+            "name": "Shreeya"
+            
+        }
+    ],
     "Book": [
         {
             "book_id": 1,
@@ -136,6 +133,13 @@
             "author_name": "shreeya",
             "stock": "0",
             "avilable": true
+        },
+        {
+            "book_id": 21,
+            "title": "hello",
+            "author_name": "palpasa",
+            "stock": 3,
+            "available": true
         }
     ],
     "Member": [
@@ -178,6 +182,11 @@
         {
             "member_id": "333",
             "name": "shreeya",
+            "role": "student"
+        },
+        {
+            "member_id": "3456",
+            "name": "palpasa",
             "role": "student"
         }
     ],
@@ -290,6 +299,12 @@
             "book_name": "ikigai",
             "borrow_date": "2025-03-07",
             "expiry_date": "2025-03-22"
+        },
+        {
+            "member_id": "34",
+            "book_name": "hello",
+            "borrow_date": "2025-03-10",
+            "expiry_date": "2025-03-25"
         }
     ]
 }
