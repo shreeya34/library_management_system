@@ -1,8 +1,18 @@
 {
+   "Admin":[
+    {
+          "admin_id": "admin1",
+          "name": "Shreeya",
+          "password": "admin"
+
+    }
+
+   ],
+   
     "Book": [
         {
             "book_id": 1,
-            "title": "1984",
+            "title": "sss",
             "author_name": "George Orwell",
             "avilable": true
         },
@@ -117,43 +127,15 @@
             "book_id": 19,
             "title": "ikigai",
             "author_name": "shreea",
-            "stock": "8",
+            "stock": 8,
             "avilable": true
         },
         {
             "book_id": 20,
             "title": "pellow ",
             "author_name": "shreeya",
-            "stock": "8",
+            "stock": "0",
             "avilable": true
-        },
-        {
-            "book_id": 21,
-            "title": "vgbhnm",
-            "author_name": "vbnm",
-            "stock": "5",
-            "avilable": true
-        },
-        {
-            "book_id": 22,
-            "title": "shreeya",
-            "author_name": "shreeey",
-            "stock": "8",
-            "avilable": true
-        },
-        {
-            "book_id": 23,
-            "title": "shreeya",
-            "author_name": "samrat",
-            "stock": "9",
-            "avilable": true
-        },
-        {
-            "book_id": 24,
-            "title": "shreeya",
-            "author_name": "shsh",
-            "stock": "2",
-            "available": true
         }
     ],
     "Member": [
@@ -180,6 +162,134 @@
             "name": "s",
             "role": "s",
             "expiry_date": "2026-03-06"
+        },
+        {
+            "member_id": 5,
+            "name": "ss",
+            "role": "2345",
+            "expiry_date": "2026-03-06"
+        },
+        {
+            "member_id": "222",
+            "name": "sss",
+            "role": "ss",
+            "expiry_date": "2025-03-21"
+        },
+        {
+            "member_id": "333",
+            "name": "shreeya",
+            "role": "student"
+        }
+    ],
+    "Borrow_Books": [
+        {
+            "member_id": "444",
+            "name": "name",
+            "book_name": "ikagai",
+            "borrow_date": "2025-03-06",
+            "expiry_date": "2025-03-21"
+        },
+        {
+            "member_id": "234",
+            "book_name": "ikigai",
+            "borrow_date": "2025-03-07",
+            "expiry_date": "2025-03-22"
+        },
+        {
+            "member_id": "222",
+            "book_name": "pellow",
+            "borrow_date": "2025-03-07",
+            "expiry_date": "2025-03-22"
+        },
+        {
+            "member_id": "233",
+            "book_name": "place",
+            "borrow_date": "2025-03-07",
+            "expiry_date": "2025-03-22"
+        },
+        {
+            "member_id": "2121",
+            "book_name": "pellow",
+            "borrow_date": "2025-03-07",
+            "expiry_date": "2025-03-22"
+        },
+        {
+            "member_id": "2323",
+            "book_name": "pellow",
+            "borrow_date": "2025-03-07",
+            "expiry_date": "2025-03-22"
+        },
+        {
+            "member_id": "2323",
+            "book_name": "pellow",
+            "borrow_date": "2025-03-07",
+            "expiry_date": "2025-03-22"
+        },
+        {
+            "member_id": "1",
+            "book_name": "pellow",
+            "borrow_date": "2025-03-07",
+            "expiry_date": "2025-03-22"
+        },
+        {
+            "member_id": "13",
+            "book_name": "pellow",
+            "borrow_date": "2025-03-07",
+            "expiry_date": "2025-03-22"
+        },
+        {
+            "member_id": "5",
+            "book_name": "pellow",
+            "borrow_date": "2025-03-07",
+            "expiry_date": "2025-03-22"
+        },
+        {
+            "member_id": "23",
+            "book_name": "pellow",
+            "borrow_date": "2025-03-07",
+            "expiry_date": "2025-03-22"
+        },
+        {
+            "member_id": "233",
+            "book_name": "pellow",
+            "borrow_date": "2025-03-07",
+            "expiry_date": "2025-03-22"
+        },
+        {
+            "member_id": "234",
+            "book_name": "pellow",
+            "borrow_date": "2025-03-07",
+            "expiry_date": "2025-03-22"
+        },
+        {
+            "member_id": "345",
+            "book_name": "pellow",
+            "borrow_date": "2025-03-07",
+            "expiry_date": "2025-03-22"
+        },
+        {
+            "member_id": "66",
+            "book_name": "pellow",
+            "borrow_date": "2025-03-07",
+            "expiry_date": "2025-03-22"
+        },
+        {
+            "member_id": "34",
+            "book_name": "ikigai",
+            "borrow_date": "2025-03-07",
+            "expiry_date": "2025-03-22"
+        },
+        {
+            "member_id": "89",
+            "book_name": "ikigai",
+            "borrow_date": "2025-03-07",
+            "expiry_date": "2025-03-22"
+        },
+        {
+            "member_id": "3030",
+            "book_name": "ikigai",
+            "borrow_date": "2025-03-07",
+            "expiry_date": "2025-03-22"
         }
     ]
 }
