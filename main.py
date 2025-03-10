@@ -57,7 +57,7 @@ def main():
         print(f"Welcome, {name}! Member features:")
         print("1: Borrow a book")
         print("2: Return a book")
-        print("3: Renew book date")
+      
 
         while True:
             choice = input("Enter your choice: ")
