@@ -6,7 +6,6 @@
         }
     ],
     "Book": [
-       
         {
             "book_id": 17,
             "title": "1984",
@@ -33,6 +32,13 @@
             "title": "hello",
             "author_name": "palpasa",
             "stock": 3,
+            "available": true
+        },
+        {
+            "book_id": 5,
+            "title": "rich dad",
+            "author_name": "hdbjs",
+            "stock": 4,
             "available": true
         }
     ],
@@ -86,6 +92,11 @@
         {
             "member_id": "346",
             "name": "amisha",
+            "role": "student"
+        },
+        {
+            "member_id": "343",
+            "name": "palpasa",
             "role": "student"
         }
     ],
@@ -202,6 +213,12 @@
         {
             "member_id": "34",
             "book_name": "hello",
+            "borrow_date": "2025-03-10",
+            "expiry_date": "2025-03-25"
+        },
+        {
+            "member_id": "343",
+            "book_name": "rich dad",
             "borrow_date": "2025-03-10",
             "expiry_date": "2025-03-25"
         }
